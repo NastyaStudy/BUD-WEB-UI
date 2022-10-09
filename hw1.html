@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <title>Examples</title>
+    <link rel="icon" href="src/favicon.png" type="image/gif" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div>
+      <div class="container text-center up-line">
+        <div class="row">
+          <div class="col up-line1">
+            <a href="https://replicate.com/" class="link">Replicate</a>
+          </div>
+          <div class="col up-line2">
+            <a href="https://replicate.com/explore" class="link">Explore</a>
+          </div>
+          <div class="col up-line2">
+            <a href="https://replicate.com/pricing" class="link">Pricing</a>
+          </div>
+          <div class="col up-line2">
+            <a href="https://replicate.com/docs" class="link">Docs</a>
+          </div>
+          <div class="col up-line2">
+            <a href="https://replicate.com/blog" class="link">Blog</a>
+          </div>
+          <div class="col up-line2">
+            <a
+              href="https://replicate.com/signin?next=/andreasjansson/stable-diffusion-animation/examples"
+              class="link"
+              >Sign in</a
+            >
+          </div>
+          <div class="col up-line2">
+            <button
+              onclick="document.location='https://replicate.com/docs'"
+              class="up-line-button"
+            >
+              Get started
+            </button>
+          </div>
+        </div>
+      </div>
+      <h2>
+        <span>
+          <a href="https://replicate.com/andreasjansson" class="link"
+            >andreasjansson</a
+          >
+          / stable-diffusion-animation</span
+        >
+      </h2>
+      <table class="first-table">
+        <td class="top-section">
+          <img src="https://img.icons8.com/ios/500/globe--v1.png" width="16" />
+          PUBLIC
+        </td>
+        <td class="first-section">
+          Animate Stable Diffusion by interpolating between two prompts
+        </td>
+        <td class="section runs">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/744/original/pngwing.com.png?1665149950"
+            width="16"
+          />
+          14.2K runs
+        </td>
+        <td class="section">
+          <button
+            class="button-two"
+            onclick="window.open('https://github.com/andreasjansson/cog-stable-diffusion')"
+          >
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/745/original/github.png?1665150087"
+              width="16"
+            />
+            GitHub
+          </button>
+        </td>
+        <td class="section">
+          <button
+            class="button-two"
+            onclick="window.open('https://github.com/CompVis/stable-diffusion/blob/main/LICENSE')"
+          >
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/746/original/pngegg.png?1665150231"
+              width="16"
+            />
+            License
+          </button>
+        </td>
+      </table>
+      <table>
+        <td class="section-two sleep">
+          <a
+            href="https://replicate.com/andreasjansson/stable-diffusion-animation"
+            class="link-two"
+            ><img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/829/original/kisspng-computer-icons-symbol-inverted-commas-5b241c84c9dd80.1359962315290932528269.png?1665247191"
+              width="16"
+            />Overview</a
+          >
+        </td>
+        <td class="section-two current">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/830/original/pngegg_%281%29.png?1665247491"
+            width="16"
+          />
+          Examples
+        </td>
+        <td class="section-two sleep">
+          <a
+            href="https://replicate.com/andreasjansson/stable-diffusion-animation/versions"
+            class="link-two"
+            ><img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/831/original/clock-with-circular-arrow.png?1665247701"
+            />
+            Versions</a
+          >
+        </td>
+      </table>
+      <hr class="first-line" />
+      <div class="container text-center">
+        <div class="row">
+          <div class="col first-text">
+            <h4>Input</h4>
+            <p>seed</p>
+            <p class="text-style">7825</p>
+            <p>width</p>
+            <p class="text-style">512</p>
+            <p>height</p>
+            <p class="text-style">512</p>
+            <p>prompt_end</p>
+            <p class="text-style">
+              the tall neon covered skyline of paris in 2050, science fiction,
+              space ships, cgsociety, space art, matte painting, redshift,
+              concept art
+            </p>
+            <p>prompt_start</p>
+            <p class="text-style">
+              the low skyline of medieval paris, cgsociety, concept art
+            </p>
+            <p>gif_ping_pong</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>output_format</p>
+            <p class="text-style">mp4</p>
+            <p>guidance_scale</p>
+            <p class="text-style">7.5</p>
+            <p>prompt_strength</p>
+            <p class="text-style">0.7</p>
+            <p>film_interpolation</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>num_inference_steps</p>
+            <p class="text-style">50</p>
+            <p>num_animation_frames</p>
+            <p class="text-style">20</p>
+            <p>gif_frames_per_second</p>
+            <p class="text-style">20</p>
+            <p>num_interpolation_steps</p>
+            <p class="text-style">5</p>
+            <button
+              class="button-under"
+              onclick="document.location='https://replicate.com/andreasjansson/stable-diffusion-animation?prediction=nby3ut2bljhixb2gejkljmcib4'"
+            >
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/833/original/filter_12.png?1665248087"
+                width="16"
+              />
+              Tweak it
+            </button>
+          </div>
+          <div class="col first-text">
+            <h4>Output</h4>
+            <video src="src/output.mp4" controls></video>
+            <button class="button-under">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/832/original/pngegg_%282%29.png?1665247797"
+                width="16"
+              />
+              Report
+            </button>
+            <br />
+            >_
+            <a href="" class="false-link1 false">Show logs</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container text-center">
+        <div class="row">
+          <div class="col first-text">
+            <p>seed</p>
+            <p class="text-style">41784</p>
+            <p>width</p>
+            <p class="text-style">512</p>
+            <p>height</p>
+            <p class="text-style">512</p>
+            <p>prompt_end</p>
+            <p class="text-style">
+              a person stepping out of the painting, holding the frame, a fine
+              art painting by Michelangelo Merisi da Caravaggio, featured on
+              instagram, classical realism, art on instagram, academic art, art
+            </p>
+            <p>prompt_start</p>
+            <p class="text-style">
+              a person sitting in a chair, a fine art framed painting by
+              Michelangelo Merisi `da Caravaggio, featured on instagram,
+              classical realism, art on instagram, academic art, art
+            </p>
+            <p>gif_ping_pong</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>output_format</p>
+            <p class="text-style">mp4</p>
+            <p>guidance_scale</p>
+            <p class="text-style">7.5</p>
+            <p>prompt_strength</p>
+            <p class="text-style">0.7</p>
+            <p>film_interpolation</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>num_inference_steps</p>
+            <p class="text-style">50</p>
+            <p>num_animation_frames</p>
+            <p class="text-style">20</p>
+            <p>gif_frames_per_second</p>
+            <p class="text-style">20</p>
+            <p>num_interpolation_steps</p>
+            <p class="text-style">5</p>
+            <p>
+              <button
+                class="button-under"
+                onclick="document.location='https://replicate.com/andreasjansson/stable-diffusion-animation?prediction=3kaiiitjdrclpk47qke7j2sw3a'"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/833/original/filter_12.png?1665248087"
+                  width="16"
+                />
+                Tweak it
+              </button>
+            </p>
+          </div>
+          <div class="col first-text">
+            <video src="src/output (1).mp4" controls></video>
+            <button class="button-under">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/832/original/pngegg_%282%29.png?1665247797"
+                width="16"
+              />
+              Report
+            </button>
+            <br />
+            >_
+            <a href="" class="false-link2 false">Show logs</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container text-center">
+        <div class="row">
+          <div class="col first-text">
+            <p>width</p>
+            <p class="text-style">512</p>
+            <p>height</p>
+            <p class="text-style">512</p>
+            <p>prompt_end</p>
+            <p class="text-style">
+              travel into another dimension, geometric, sparkling, flashing,
+              astral
+            </p>
+            <p>prompt_start</p>
+            <p class="text-style">kaleidoscopic hyperspace vortex</p>
+            <p>gif_ping_pong</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>output_format</p>
+            <p class="text-style">mp4</p>
+            <p>guidance_scale</p>
+            <p class="text-style">7.5</p>
+            <p>prompt_strength</p>
+            <p class="text-style">0.9</p>
+            <p>film_interpolation</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>num_inference_steps</p>
+            <p class="text-style">50</p>
+            <p>num_animation_frames</p>
+            <p class="text-style">20</p>
+            <p>gif_frames_per_second</p>
+            <p class="text-style">20</p>
+            <p>num_interpolation_steps</p>
+            <p class="text-style">3</p>
+            <p>
+              <button
+                class="button-under"
+                onclick="document.location='https://replicate.com/andreasjansson/stable-diffusion-animation?prediction=z2kl42csa5cgfow3xfgaiokxtq'"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/833/original/filter_12.png?1665248087"
+                  width="16"
+                />
+                Tweak it
+              </button>
+            </p>
+          </div>
+          <div class="col first-text">
+            <video src="src/output (2).mp4" controls></video>
+            <button class="button-under">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/832/original/pngegg_%282%29.png?1665247797"
+                width="16"
+              />
+              Report
+            </button>
+            <br />
+            >_
+            <a href="" class="false-link3 false">Show logs</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container text-center">
+        <div class="row">
+          <div class="col first-text">
+            <p>width</p>
+            <p class="text-style">512</p>
+            <p>height</p>
+            <p class="text-style">512</p>
+            <p>prompt_end</p>
+            <p class="text-style">
+              tall rectangular black monolith, a white room in the future with a
+              bed, victorian details and a tall black monolith, a detailed matte
+              painting by Wes Anderson, behance, light and space, reimagined by
+              industrial light and magic, matte painting, criterion collection
+            </p>
+            <p>prompt_start</p>
+            <p class="text-style">
+              tall rectangular black monolith, monkeys in the desert looking at
+              a large tall monolith, a detailed matte painting by Wes Anderson,
+              behance, light and space, reimagined by industrial light and
+              magic, matte painting, criterion collection
+            </p>
+            <p>gif_ping_pong</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>output_format</p>
+            <p class="text-style">mp4</p>
+            <p>guidance_scale</p>
+            <p class="text-style">7.5</p>
+            <p>prompt_strength</p>
+            <p class="text-style">0.9</p>
+            <p>film_interpolation</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>num_inference_steps</p>
+            <p class="text-style">50</p>
+            <p>num_animation_frames</p>
+            <p class="text-style">25</p>
+            <p>gif_frames_per_second</p>
+            <p class="text-style">20</p>
+            <p>num_interpolation_steps</p>
+            <p class="text-style">5</p>
+            <p>
+              <button
+                class="button-under"
+                onclick="document.location='https://replicate.com/andreasjansson/stable-diffusion-animation?prediction=wsdaibdifnhlnptfyeyq6dgm4q'"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/833/original/filter_12.png?1665248087"
+                  width="16"
+                />
+                Tweak it
+              </button>
+            </p>
+          </div>
+          <div class="col first-text">
+            <video src="src/output (3).mp4" controls></video>
+            <button class="button-under">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/832/original/pngegg_%282%29.png?1665247797"
+                width="16"
+              />
+              Report
+            </button>
+            <br />
+            >_
+            <a href="" class="false-link4 false">Show logs</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container text-center">
+        <div class="row">
+          <div class="col first-text">
+            <p>width</p>
+            <p class="text-style">1024</p>
+            <p>height</p>
+            <p class="text-style">512</p>
+            <p>prompt_end</p>
+            <p class="text-style">
+              the tall neon covered skyline of london in 2050, science fiction,
+              space ships, cgsociety, space ships, space art, matte painting,
+              redshift, concept art
+            </p>
+            <p>prompt_start</p>
+            <p class="text-style">
+              the low skyline of medieval london, cgsociety, concept art
+            </p>
+            <p>output_format</p>
+            <p class="text-style">mp4</p>
+            <p>guidance_scale</p>
+            <p class="text-style">7.5</p>
+            <p>prompt_strength</p>
+            <p class="text-style">0.7</p>
+            <p>film_interpolation</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>num_inference_steps</p>
+            <p class="text-style">50</p>
+            <p>num_animation_frames</p>
+            <p class="text-style">40</p>
+            <p>gif_frames_per_second</p>
+            <p class="text-style">20</p>
+            <p>num_interpolation_steps</p>
+            <p class="text-style">5</p>
+            <p>
+              <button
+                class="button-under"
+                onclick="document.location='https://replicate.com/andreasjansson/stable-diffusion-animation?prediction=5py2nsxh7fal5bbipcykw6u7tu'"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/833/original/filter_12.png?1665248087"
+                  width="16"
+                />
+                Tweak it
+              </button>
+            </p>
+          </div>
+          <div class="col first-text">
+            <video src="src/output (4).mp4" controls width="550"></video>
+            <button class="button-under">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/832/original/pngegg_%282%29.png?1665247797"
+                width="16"
+              />
+              Report
+            </button>
+            <br />
+            >_
+            <a href="" class="false-link5 false">Show logs</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container text-center">
+        <div class="row">
+          <div class="col first-text">
+            <p>width</p>
+            <p class="text-style">512</p>
+            <p>height</p>
+            <p class="text-style">512</p>
+            <p>prompt_end</p>
+            <p class="text-style">
+              the face of tom cruise smiling a happy smile, headshot
+            </p>
+            <p>prompt_start</p>
+            <p class="text-style">
+              the face of tom cruise very angry, headshot
+            </p>
+            <p>output_format</p>
+            <p class="text-style">mp4</p>
+            <p>guidance_scale</p>
+            <p class="text-style">7.5</p>
+            <p>prompt_strength</p>
+            <p class="text-style">0.75</p>
+            <p>film_interpolation</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>intermediate_output</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>num_inference_steps</p>
+            <p class="text-style">50</p>
+            <p>num_animation_frames</p>
+            <p class="text-style">10</p>
+            <p>gif_frames_per_second</p>
+            <p class="text-style">20</p>
+            <p>num_interpolation_steps</p>
+            <p class="text-style">5</p>
+            <p>
+              <button
+                class="button-under"
+                onclick="document.location='https://replicate.com/andreasjansson/stable-diffusion-animation?prediction=voxuinyafnbxrisoe3zysivkkm'"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/833/original/filter_12.png?1665248087"
+                  width="16"
+                />
+                Tweak it
+              </button>
+            </p>
+          </div>
+          <div class="col first-text">
+            <video src="src/output (5).mp4" controls></video>
+            <button class="button-under">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/832/original/pngegg_%282%29.png?1665247797"
+                width="16"
+              />
+              Report
+            </button>
+            <br />
+            >_
+            <a href="" class="false-link6 false">Show logs</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container text-center">
+        <div class="row">
+          <div class="col first-text">
+            <p>width</p>
+            <p class="text-style">512</p>
+            <p>height</p>
+            <p class="text-style">512</p>
+            <p>prompt_end</p>
+            <p class="text-style">
+              an alien spaceship shaped like a butterfly with wings in space,
+              cgsociety
+            </p>
+            <p>prompt_start</p>
+            <p class="text-style">a butterfly in space, cgsociety</p>
+            <p>gif_ping_pong</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>output_format</p>
+            <p class="text-style">mp4</p>
+            <p>guidance_scale</p>
+            <p class="text-style">7.5</p>
+            <p>prompt_strength</p>
+            <p class="text-style">0.9</p>
+            <p>film_interpolation</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>intermediate_output</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>num_inference_steps</p>
+            <p class="text-style">50</p>
+            <p>num_animation_frames</p>
+            <p class="text-style">10</p>
+            <p>gif_frames_per_second</p>
+            <p class="text-style">20</p>
+            <p>num_interpolation_steps</p>
+            <p class="text-style">5</p>
+            <p>
+              <button
+                class="button-under"
+                onclick="document.location='https://replicate.com/andreasjansson/stable-diffusion-animation?prediction=wx34jx42a5dh7pfqgfeadkeu7i'"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/833/original/filter_12.png?1665248087"
+                  width="16"
+                />
+                Tweak it
+              </button>
+            </p>
+          </div>
+          <div class="col first-text">
+            <video src="src/output (6).mp4" controls></video>
+            <button class="button-under">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/832/original/pngegg_%282%29.png?1665247797"
+                width="16"
+              />
+              Report
+            </button>
+            <br />
+            >_
+            <a href="" class="false-link7 false">Show logs</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container text-center">
+        <div class="row">
+          <div class="col first-text">
+            <p>seed</p>
+            <p class="text-style">30329</p>
+            <p>width</p>
+            <p class="text-style">512</p>
+            <p>height</p>
+            <p class="text-style">512</p>
+            <p>prompt_end</p>
+            <p class="text-style">
+              an alien spaceship shaped like a butterfly with wings in space,
+              high detail, hi tech, sci fi, cgsociety
+            </p>
+            <p>prompt_start</p>
+            <p class="text-style">a butterfly in space, cgsociety</p>
+            <p>gif_ping_pong</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>output_format</p>
+            <p class="text-style">mp4</p>
+            <p>guidance_scale</p>
+            <p class="text-style">7.5</p>
+            <p>prompt_strength</p>
+            <p class="text-style">0.6</p>
+            <p>film_interpolation</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>intermediate_output</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>num_inference_steps</p>
+            <p class="text-style">50</p>
+            <p>num_animation_frames</p>
+            <p class="text-style">20</p>
+            <p>gif_frames_per_second</p>
+            <p class="text-style">20</p>
+            <p>num_interpolation_steps</p>
+            <p class="text-style">3</p>
+            <p>
+              <button
+                class="button-under"
+                onclick="document.location='https://replicate.com/andreasjansson/stable-diffusion-animation?prediction=pqkgnkrsvbcathogdtnlmkcyte'"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/833/original/filter_12.png?1665248087"
+                  width="16"
+                />
+                Tweak it
+              </button>
+            </p>
+          </div>
+          <div class="col first-text">
+            <video src="src/output (7).mp4" controls></video>
+            <button class="button-under">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/832/original/pngegg_%282%29.png?1665247797"
+                width="16"
+              />
+              Report
+            </button>
+            <br />
+            >_
+            <a href="" class="false-link8 false">Show logs</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container text-center">
+        <div class="row">
+          <div class="col first-text">
+            <p>width</p>
+            <p class="text-style">512</p>
+            <p>height</p>
+            <p class="text-style">512</p>
+            <p>prompt_end</p>
+            <p class="text-style">
+              symmetrical oak tree in a field, full of green leaves, lush,
+              summer, sunny
+            </p>
+            <p>prompt_start</p>
+            <p class="text-style">
+              symmetrical oak tree in a field, without leaves, bare, winter,
+              dark
+            </p>
+            <p>gif_ping_pong</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>output_format</p>
+            <p class="text-style">mp4</p>
+            <p>guidance_scale</p>
+            <p class="text-style">7.5</p>
+            <p>prompt_strength</p>
+            <p class="text-style">0.9</p>
+            <p>film_interpolation</p>
+            <p>
+              <img
+                src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911623checkmark.png"
+                width="16"
+              />
+            </p>
+            <p>num_inference_steps</p>
+            <p class="text-style">50</p>
+            <p>num_animation_frames</p>
+            <p class="text-style">25</p>
+            <p>gif_frames_per_second</p>
+            <p class="text-style">20</p>
+            <p>num_interpolation_steps</p>
+            <p class="text-style">5</p>
+            <p>
+              This example was created by
+
+              <a href="@bfirsh">@bfirsh</a>
+            </p>
+            <p>
+              <button
+                class="button-under"
+                onclick="document.location='https://replicate.com/andreasjansson/stable-diffusion-animation?prediction=eyhidiwrhnf57dyd44vsziuqzq'"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/833/original/filter_12.png?1665248087"
+                  width="16"
+                />
+                Tweak it
+              </button>
+            </p>
+          </div>
+          <div class="col first-text">
+            <video src="src/output (8).mp4" controls></video>
+            <button class="button-under">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/832/original/pngegg_%282%29.png?1665247797"
+                width="16"
+              />
+              Report
+            </button>
+            <br />
+            >_
+            <a href="" class="false-link9 false">Show logs</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="on-bottom">Want to make some of these yourself? <br /></div>
+      <button
+        class="run-button"
+        onclick="document.location='https://replicate.com/andreasjansson/stable-diffusion-animation'"
+      >
+        Run this model
+      </button>
+      <hr />
+      <table class="table-under">
+        <td class="table-under1">Replicate</td>
+        <td class="table-under2">
+          <a href="https://replicate.com/about" class="link-three">About</a>
+        </td>
+        <td class="table-under2">
+          <a href="https://replicate.com/docs" class="link-three">Docs</a>
+        </td>
+        <td class="table-under2">
+          <a href="https://replicate.com/terms" class="link-three">Terms</a>
+        </td>
+        <td class="table-under2">
+          <a href="https://replicate.com/privacy" class="link-three">Privacy</a>
+        </td>
+        <td class="table-under2">
+          <a href="https://github.com/replicate" class="link-three">GitHub</a>
+        </td>
+        <td class="table-under2">
+          <a href="https://twitter.com/replicatehq" class="link-three"
+            >Twitter</a
+          >
+        </td>
+        <td class="table-under2">
+          <a href="team@replicate.com" class="link-three">Email</a>
+        </td>
+      </table>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
